@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# run linter
+npm run lint
+
+# format code
+npm run format
+
+# index new changes
+git add .
